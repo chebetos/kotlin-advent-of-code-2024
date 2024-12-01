@@ -38,20 +38,14 @@ class Day01Test {
     @Test
     fun testSumOfDistances() {
         val actualSum: Int = Day01.sumOfDistances(testInput)
-        val expectedSum: Int = 11
+        val expectedSum = 11
         assertEquals(expectedSum, actualSum)
     }
 
     @Test
-    fun day00Part1() {
-        // test if implementation meets criteria from the description, like:
-        assertEquals(2, Day01.part1(testInput))
+    fun testSimilarityScore() {
+        val actualSum: Int = Day01.similarityScore(testInput)
+        val expectedSum = 31
+        assertEquals(expectedSum, actualSum)
     }
-
-//    @Test
-//    fun day00Part2() {
-//        // test if implementation meets criteria from the description, like:
-//        val testInput = Utils.readInput("day00.txt")
-//        assertEquals(2, Day01.part2(testInput))
-//    }
 }
