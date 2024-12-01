@@ -5,14 +5,14 @@ import println
 
 fun main() {
     val day01Input = Utils.readInput("day00_input.txt")
-    val part1Result = Day01.part1(day01Input)
+    val part1Result = Day00.part1(day01Input)
     part1Result.println()
 
-    val part2Result = Day01.part2(day01Input)
+    val part2Result = Day00.part2(day01Input)
     part2Result.println()
 }
 
-object Day01 {
+object Day00 {
     fun part1(lines: List<String>): Int {
         return lines.size
     }

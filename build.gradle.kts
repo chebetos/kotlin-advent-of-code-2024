@@ -1,9 +1,9 @@
 plugins {
-    kotlin("jvm") version "1.9.21"
+    kotlin("jvm") version "2.1.0"
     application
 }
 
-group = "es.chebetos.advent2023"
+group = "es.chebetos.advent2024"
 version = "1.0-SNAPSHOT"
 
 dependencies {
@@ -20,6 +20,6 @@ tasks {
         useJUnitPlatform()
     }
     wrapper {
-        gradleVersion = "8.5"
+        gradleVersion = "8.11.1"
     }
 }
