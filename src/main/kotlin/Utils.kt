@@ -12,6 +12,14 @@ object Utils {
             ?.readLines()
             ?: listOf()
     }
+
+    fun readInputAsString(name: String): String {
+        return this::class.java
+            .getResourceAsStream(name)
+            ?.bufferedReader()
+            ?.readText()
+            .orEmpty()
+    }
 }
 
 /**
