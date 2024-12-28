@@ -51,7 +51,7 @@ object Day01 {
         return pairsFromSortedLists.sumOf { it.diff() }
     }
 
-    fun countFrequencies(input: List<String>): Pair<List<Int>, Map<Int, Int>> {
+    private fun countFrequencies(input: List<String>): Pair<List<Int>, Map<Int, Int>> {
         val sortedLists: Pair<List<Int>, List<Int>> = sortedLists(input)
         val counts = mutableMapOf<Int, Int>()
         sortedLists.first.toSet().forEach { leftValue ->
